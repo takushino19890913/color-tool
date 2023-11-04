@@ -2,15 +2,18 @@ body {
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;  /* centerからflex-startに変更 */
+    height: 100%;  /* vhから%に変更 */
     margin: 0;
     background: white;
-}
-
-#app {
+    padding: 20px;  /* 必要に応じて追加 */
+    box-sizing: border-box;  /* 追加 */
+  }
+  
+  #app {
     text-align: center;
-}
+    height: auto;  /* 追加 */
+  }
 
 input[type=range] {
     width: 100%;
